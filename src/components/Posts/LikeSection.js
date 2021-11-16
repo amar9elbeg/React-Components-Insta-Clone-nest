@@ -13,18 +13,14 @@ const LikeSection = (props) => {
   return (
     <div>
       <div className="like-section" key="likes-icons-container">
-        <div
-          className="like-section-wrapper"
-          onClick={likePost}
-          style={{ cursor: "pointer" }}
-        >
+        <div className="like-section-wrapper" style={{ cursor: "pointer" }}>
           <FontAwesomeIcon icon={faHeart} />
         </div>
         <div className="like-section-wrapper" style={{ cursor: "pointer" }}>
           <FontAwesomeIcon icon={faComment} />
         </div>
       </div>
-      <p className="like-number">{numberOfLikes} likes</p>
+      <p className="like-number">100 likes</p>
     </div>
   );
 };
